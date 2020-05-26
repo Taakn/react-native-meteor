@@ -33,6 +33,9 @@ module.exports = {
     Mongo: {
         Collection,
     },
+    collection(name, options) {
+        return new Collection(name, options);
+    },
     withTracker,
     getData() {
         return Data;
